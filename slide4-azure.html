@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F6F6;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60pt;
+  background: #1C2833;
+  display: flex;
+  align-items: center;
+  padding: 0 30pt;
+}
+.header h1 {
+  color: #ffffff;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0;
+}
+.content {
+  margin-top: 80pt;
+  padding: 0 30pt;
+  width: 100%;
+  display: flex;
+  gap: 20pt;
+}
+.left-col {
+  flex: 1;
+}
+.right-col {
+  flex: 1;
+}
+.info-box {
+  background: #ffffff;
+  padding: 15pt;
+  border-radius: 8pt;
+  margin-bottom: 15pt;
+  border-left: 6pt solid #0078D4;
+}
+.info-box h2 {
+  color: #1C2833;
+  font-size: 18pt;
+  margin: 0 0 10pt 0;
+  font-weight: bold;
+}
+.info-box ul {
+  margin: 0;
+  padding-left: 20pt;
+  color: #2E4053;
+  font-size: 12pt;
+}
+.info-box li {
+  margin: 5pt 0;
+}
+.chart-placeholder {
+  width: 100%;
+  height: 240pt;
+  background: #E8F4F8;
+  border-radius: 8pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Microsoft Azure</h1>
+</div>
+<div class="content">
+  <div class="left-col">
+    <div class="info-box">
+      <h2>Top Services</h2>
+      <ul>
+        <li>Capacity (RIs): $608K (-15.5%)</li>
+        <li>Storage: $497K (-2.6%)</li>
+        <li>Wiz Security: $401K (New)</li>
+        <li>Databricks: $347K (+9.3%)</li>
+        <li>SQL: $266K (-6.7%)</li>
+        <li>Ops Insights: $165K (+10.9%)</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h2>Key Insights</h2>
+      <ul>
+        <li>New Wiz security platform</li>
+        <li>Databricks usage growing</li>
+        <li>RI costs decreasing</li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-col">
+    <div id="chart" class="chart-placeholder placeholder"></div>
+  </div>
+</div>
+</body>
+</html>

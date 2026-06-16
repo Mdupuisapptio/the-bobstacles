@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #F4F6F6;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60pt;
+  background: #1C2833;
+  display: flex;
+  align-items: center;
+  padding: 0 30pt;
+}
+.header h1 {
+  color: #ffffff;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0;
+}
+.content {
+  margin-top: 80pt;
+  padding: 0 30pt;
+  width: 100%;
+  display: flex;
+  gap: 20pt;
+}
+.left-col {
+  flex: 1;
+}
+.right-col {
+  flex: 1;
+}
+.info-box {
+  background: #ffffff;
+  padding: 15pt;
+  border-radius: 8pt;
+  margin-bottom: 15pt;
+  border-left: 6pt solid #FF9900;
+}
+.info-box h2 {
+  color: #1C2833;
+  font-size: 18pt;
+  margin: 0 0 10pt 0;
+  font-weight: bold;
+}
+.info-box ul {
+  margin: 0;
+  padding-left: 20pt;
+  color: #2E4053;
+  font-size: 12pt;
+}
+.info-box li {
+  margin: 5pt 0;
+}
+.chart-placeholder {
+  width: 100%;
+  height: 240pt;
+  background: #E8F4F8;
+  border-radius: 8pt;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Amazon Web Services (AWS)</h1>
+</div>
+<div class="content">
+  <div class="left-col">
+    <div class="info-box">
+      <h2>Top Services</h2>
+      <ul>
+        <li>EC2: $2.65M (-12.8%)</li>
+        <li>Savings Plans: $755K (+5.5%)</li>
+        <li>RDS: $631K (-1.7%)</li>
+        <li>EMR: $408K (-21.8%)</li>
+        <li>S3: $342K (-6.5%)</li>
+        <li>Support: $102K (-35.7%)</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h2>Key Insights</h2>
+      <ul>
+        <li>EC2 costs decreased $390K</li>
+        <li>EMR usage down 22%</li>
+        <li>Support costs reduced 36%</li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-col">
+    <div id="chart" class="chart-placeholder placeholder"></div>
+  </div>
+</div>
+</body>
+</html>
